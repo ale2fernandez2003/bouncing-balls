@@ -40,9 +40,9 @@ public class BallDemo
         for (int i = 0; i < numBalls; i++) {
             int radio = random.nextInt(20) + 10;
             Color color = new Color(random.nextInt(256), random.nextInt(256), random.nextInt(256));
-            int X = random.nextInt(550/2);
-            int Y = random.nextInt(201);
-            balls[i] = new BouncingBall(X, Y, radio, color, ground, myCanvas);
+            int x = random.nextInt(550/2);
+            int y = random.nextInt(201);
+            balls[i] = new BouncingBall(x, y, radio, color, ground, myCanvas);
             balls[i].draw();
         }
         

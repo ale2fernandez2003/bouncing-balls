@@ -28,7 +28,9 @@ public class BouncingBall
     private int yPosition;
     private final int groundPosition;      // y position of ground
     private Canvas canvas;
-    private int ySpeed = 1;                // initial downward speed
+    private int ySpeed = 1;
+    private static int contador = 0;
+    // initial downward speed
 
     /**
      * Constructor for objects of class BouncingBall
@@ -49,6 +51,7 @@ public class BouncingBall
         diameter = ballDiameter;
         groundPosition = groundPos;
         canvas = drawingCanvas;
+        contador ++;
     }
 
     /**
@@ -105,5 +108,9 @@ public class BouncingBall
     public int getYPosition()
     {
         return yPosition;
+    }
+    
+    public static int getCantidadDeBolasExistentes (){
+        return contador;
     }
 }
